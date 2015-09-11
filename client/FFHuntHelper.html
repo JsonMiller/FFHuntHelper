@@ -1,0 +1,17 @@
+<head>
+  <title>FFHuntHelper</title>
+</head>
+
+<template name="main">
+    <body>
+      <h1>Final Fantasy FFXIV Hunt Helper</h1>
+      {{#each zone}}
+        {{> zoneSection}}
+      {{/each}}
+    </body>
+</template>
+
+<template name="zoneSection">
+    Section {{this.name}}
+    <img src="{{this.map}}"/>
+</template>
